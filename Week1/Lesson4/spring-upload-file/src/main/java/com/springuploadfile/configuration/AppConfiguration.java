@@ -19,6 +19,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 @EnableWebMvc
+@PropertySource("classpath:upload_file.properties")
 @ComponentScan(basePackages = "com.springuploadfile")
 public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAware {
     private ApplicationContext applicationContext;
@@ -56,7 +57,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     }
 
     //Upload file
-    @Value("${upload.path}")
+    @Value("${file-upload}")
     private String upload;
 
     @Override

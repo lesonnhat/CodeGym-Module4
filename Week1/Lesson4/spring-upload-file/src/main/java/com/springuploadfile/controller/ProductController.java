@@ -20,7 +20,7 @@ import java.io.IOException;
 import java.util.List;
 
 @Controller
-@RequestMapping("/product")
+@RequestMapping("/products")
 public class ProductController {
     private final IProductService productService = new ProductService();
 
