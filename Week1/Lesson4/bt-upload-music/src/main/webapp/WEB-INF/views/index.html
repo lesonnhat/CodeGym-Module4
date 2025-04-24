@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh Sách Bài Hát</title>
+</head>
+<body>
+<h3>Danh Sách Bài Hát</h3>
+<table id = "products">
+    <thead>
+    <tr>
+        <th>Tên bài hát</th>
+        <th>Nghệ sĩ</th>
+        <th>Thể loại</th>
+        <th>Mp3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.title}"></td>
+        <td th:text="${product.artist}"></td>
+        <td th:text="${product.category}"></td>
+        <td>
+            <audio controls>
+                <source  th:src="@{'/music/' + ${product.music}}" type="audio/mpeg">
+                Ứng dụng chỉ chấp nhận các file nhạc có đuôi .mp3, .wav, .ogg, .m4p
+            </audio>
+        </td>
+    </tr>
+    <p>
+        <a th:href="@{/products/create}">
+            Thêm bài mới
+        </a>
+    </p>
+    </tbody>
+</table>
+</body>
+</html>
