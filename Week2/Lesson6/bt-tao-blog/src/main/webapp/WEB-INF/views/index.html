@@ -7,7 +7,7 @@
 <h3>Blogs</h3>
 <p>
     <a th:href="@{/blogs/create}">
-        Add new customer
+        Add new blog
     </a>
 </p>
 
@@ -17,12 +17,12 @@
     </div>
 </div>
 
-<table id = "blogs">
+<table id="blogs">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Address</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Content</th>
         <th>Edit</th>
         <th>Delete</th>
         <th>View</th>
@@ -30,9 +30,14 @@
     </thead>
     <tbody>
     <tr th:each="row,rowStat : ${blogs}">
-        <td th:text="${row.getName()}"></td>
-        <td th:text="${row.getEmail()}"></td>
-        <td th:text="${row.getAddress()}"></td>
+        <td th:text="${row.getTitle()}"></td>
+        <td th:text="${row.getAuthor()}"></td>
+        <td>
+            <span th:if="${#strings.length(row.getContent()) > 100}"
+                  th:text="${#strings.substring(row.getContent(), 0, 100) + '...'}"></span>
+            <span th:if="${#strings.length(row.getContent()) <= 100}"
+                  th:text="${row.getContent()}"></span>
+        </td>
         <td><a th:href="@{/blogs/{id}/edit(id=${row.getId()})}">edit</a></td>
         <td><a th:href="@{/blogs/{id}/delete(id=${row.getId()})}">delete</a></td>
         <td><a th:href="@{/blogs/{id}/view(id=${row.getId()})}">view</a></td>
