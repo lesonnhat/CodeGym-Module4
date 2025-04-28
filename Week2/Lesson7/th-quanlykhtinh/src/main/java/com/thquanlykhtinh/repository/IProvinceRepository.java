@@ -1,4 +1,7 @@
 package com.thquanlykhtinh.repository;
 
-public class IProvinceRepository {
+import com.thquanlykhtinh.model.Province;
+import org.springframework.data.repository.CrudRepository;
+
+public interface IProvinceRepository extends CrudRepository<Province, Long> {
 }

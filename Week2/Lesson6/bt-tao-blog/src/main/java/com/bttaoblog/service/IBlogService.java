@@ -1,4 +1,7 @@
 package com.bttaoblog.service;
 
-public class IBlogService {
+import com.bttaoblog.model.Blog;
+import java.util.List;
+
+public interface IBlogService extends IGenerateService<Blog>{
 }

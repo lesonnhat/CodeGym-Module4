@@ -1,4 +1,4 @@
-package com.example.controller;
+package org.example.btchuyendoitiente;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,6 @@
 package com.thquanlykhtinh.service;
 
-public interface IProvinceService {
+import com.thquanlykhtinh.model.Province;
+
+public interface IProvinceService extends IGenerateService<Province> {
 }
