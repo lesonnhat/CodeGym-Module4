@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang chủ</title>
+</head>
+<body>
+<h2>Chào mừng đến với Blog của tôi!</h2>
+
+<div sec:authorize="isAuthenticated()">
+  Chào mừng, <span sec:authentication="principal.username"></span>!
+  <a th:href="@{/logout}">Đăng xuất</a>
+</div>
+
+<div sec:authorize="isAnonymous()">
+  <a th:href="@{/login}">Đăng nhập</a>
+</div>
+
+<a th:href="@{/posts/create}" sec:authorize="isAuthenticated()">Tạo bài viết mới</a>
+
+<hr/>
+<!-- Hiển thị danh sách bài viết ở đây -->
+</body>
+</html>
