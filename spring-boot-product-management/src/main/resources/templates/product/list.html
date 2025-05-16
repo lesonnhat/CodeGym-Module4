@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Products</h1>
+<div style="margin-bottom: 10px; margin-left: 110px">
+    <form th:action="@{/products}" method="get">
+        <label><input type="text" name="search"></label>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+</div>
+<table border="1">
+    <tr>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Order Now</th>
+    </tr>
+    <th:block th:each="product : ${products}">
+        <tr>
+            <td th:text="${product.getName()}"></td>
+            <td th:text="${product.getPrice()}"></td>
+            <td><a th:href="@{/shoppingcart/ordernow/__${product.id}__}">OrderNow</a></td>
+        </tr>
+    </th:block>
+</table>
+
+<a class="btn btn-primary" th:if="${products.hasPrevious()}"
+   th:href="@{/products(page=0,search=${search})}">First</a>
+<a class="btn btn-primary" th:if="${products.hasPrevious()}"
+   th:href="@{/products(page=${products.number - 1},search=${search})}">Previous</a>
+<span th:text="${products.number + 1}"></span> | <span th:text="${products.totalPages}"></span>
+<a class="btn btn-primary" th:if="${products.hasNext()}"
+   th:href="@{/products(page=${products.number + 1},search=${search})}">Next</a>
+<a class="btn btn-primary" th:if="${products.hasNext()}"
+   th:href="@{/products(page=${products.totalPages - 1},search=${search})}">Last</a>
+</body>
+</html>
