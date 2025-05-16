@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0cc4006-6173-4589-bd71-ec94e2e0482a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/shopping-cart.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/shopping-cart.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/java/com/shoppingcart/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/webapp/WEB-INF/views/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/webapp/WEB-INF/views/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/webapp/WEB-INF/views/error_404..html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/webapp/WEB-INF/views/error_404..html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/webapp/WEB-INF/views/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Week2/Lesson10/shopping-cart/src/main/webapp/WEB-INF/views/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../th-su-dung-jQuery/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../th-su-dung-jQuery/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../th-su-dung-jQuery/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../th-su-dung-jQuery/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/ajax">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2wiEEjbZAv6gWiDx7GzulCvu3GZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build phone-management-ajax-web-service.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.102.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/C1224G1/Module2/Week2/Lesson8&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\C1224G1\CodeGym-Module4\Week3\Lesson12\phone-management-ajax-web-service\dsadasd" />
+      <recent name="D:\CodeGym\C1224G1\CodeGym-Module4\Week3\Lesson12\phone-management-ajax-web-service\phones-management-ajax-web-service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="phone-management-ajax-web-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="phone-management-ajax-web-service" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.102" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.102" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com : codegym-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="8d92cef6-2771-4020-bb2a-d89e2aea5027" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56443" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com : codegym-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.189" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.189" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0cc4006-6173-4589-bd71-ec94e2e0482a" name="Changes" comment="" />
+      <created>1746515885056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746515885056</updated>
+      <workItem from="1746515886208" duration="981000" />
+      <workItem from="1746516936072" duration="274000" />
+      <workItem from="1746517447960" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

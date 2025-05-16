@@ -1,7 +1,7 @@
 package com.btuploadmusic.controller;
 
-import com.btuploadmusic.model.Product;
-import com.btuploadmusic.model.ProductForm;
+import com.btuploadmusic.model.Song;
+import com.btuploadmusic.model.SongForm;
 import com.btuploadmusic.service.IProductService;
 import com.btuploadmusic.service.ProductService;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,20 +21,20 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/products")
-public class ProductController {
+public class SongController {
     private final IProductService productService = new ProductService();
 
     @GetMapping("")
     public String index(Model model) {
-        List<Product> products = productService.findAll();
-        model.addAttribute("products", products);
+        List<Song> songs = productService.findAll();
+        model.addAttribute("products", songs);
         return "/index";
     }
 
     @GetMapping("/create")
     public ModelAndView showCreateForm() {
         ModelAndView modelAndView = new ModelAndView("/create");
-        modelAndView.addObject("productForm", new ProductForm());
+        modelAndView.addObject("productForm", new SongForm());
         return modelAndView;
     }
 
@@ -42,19 +42,19 @@ public class ProductController {
     private String fileUpload;
 
     @PostMapping("/save")
-    public ModelAndView saveProduct(@ModelAttribute ProductForm productForm) {
-        MultipartFile multipartFile = productForm.getMusic();
+    public ModelAndView saveProduct(@ModelAttribute SongForm songForm) {
+        MultipartFile multipartFile = songForm.getMusic();
         String fileName = multipartFile.getOriginalFilename();
         try {
-            FileCopyUtils.copy(productForm.getMusic().getBytes(), new File(fileUpload + fileName));
+            FileCopyUtils.copy(songForm.getMusic().getBytes(), new File(fileUpload + fileName));
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        Product product = new Product(productForm.getId(), productForm.getTitle(),
-                productForm.getArtist(), productForm.getCategory(), fileName);
-        productService.save(product);
+        Song song = new Song(songForm.getId(), songForm.getTitle(),
+                songForm.getArtist(), songForm.getCategory(), fileName);
+        productService.save(song);
         ModelAndView modelAndView = new ModelAndView("/create");
-        modelAndView.addObject("productForm", productForm);
+        modelAndView.addObject("productForm", songForm);
         modelAndView.addObject("message", "Thêm bài hát thành công !");
         return modelAndView;
     }

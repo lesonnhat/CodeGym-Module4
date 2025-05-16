@@ -6,12 +6,12 @@
 <body>
 <h3>Thêm Bài Hát</h3>
 <p>
-    <a th:href="@{/products}">
+    <a th:href="@{/songs}">
         Trở lại danh sách bài hát
     </a>
 </p>
 <div id="form">
-    <form th:action="@{/products/save}" th:object="${productForm}"
+    <form th:action="@{/songs/save}" th:object="${songForm}"
           method="POST" novalidate="novalidate" enctype="multipart/form-data">
         <input type="hidden" th:field="*{id}"/>
         <table>

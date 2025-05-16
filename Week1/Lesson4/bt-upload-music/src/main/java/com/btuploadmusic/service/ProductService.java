@@ -1,41 +1,41 @@
 package com.btuploadmusic.service;
 
-import com.btuploadmusic.model.Product;
+import com.btuploadmusic.model.Song;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductService implements IProductService{
 
-    private final List<Product> products;
+    private final List<Song> songs;
 
     public ProductService() {
-        products = new ArrayList<>();
+        songs = new ArrayList<>();
     }
 
     @Override
-    public List<Product> findAll() {
-        return products;
+    public List<Song> findAll() {
+        return songs;
     }
 
     @Override
-    public Product findById(int id) {
-        return products.get(id);
+    public Song findById(int id) {
+        return songs.get(id);
     }
 
     @Override
-    public void save(Product music) {
-        products.add(music);
+    public void save(Song music) {
+        songs.add(music);
     }
 
     @Override
-    public void update(int id, Product product) {
-        int index = products.indexOf(findById(id));
-        products.set(index, product);
+    public void update(int id, Song song) {
+        int index = songs.indexOf(findById(id));
+        songs.set(index, song);
     }
 
     @Override
     public void remove(int id) {
-        products.remove(findById(id));
+        songs.remove(findById(id));
     }
 }

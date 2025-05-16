@@ -5,7 +5,7 @@
 </head>
 <body>
 <h3>Danh Sách Bài Hát</h3>
-<table id = "products">
+<table id = "songs">
     <thead>
     <tr>
         <th>Tên bài hát</th>
@@ -15,19 +15,19 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="product : ${products}">
-        <td th:text="${product.title}"></td>
-        <td th:text="${product.artist}"></td>
-        <td th:text="${product.category}"></td>
+    <tr th:each="song : ${songs}">
+        <td th:text="${song.title}"></td>
+        <td th:text="${song.artist}"></td>
+        <td th:text="${song.category}"></td>
         <td>
             <audio controls>
-                <source  th:src="@{'/music/' + ${product.music}}" type="audio/mpeg">
+                <source  th:src="@{'/music/' + ${song.music}}" type="audio/mpeg">
                 Ứng dụng chỉ chấp nhận các file nhạc có đuôi .mp3, .wav, .ogg, .m4p
             </audio>
         </td>
     </tr>
     <p>
-        <a th:href="@{/products/create}">
+        <a th:href="@{/songs/create}">
             Thêm bài mới
         </a>
     </p>

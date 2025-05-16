@@ -4,8 +4,11 @@ import com.codegym.model.Role;
 import com.codegym.model.User;
 import com.codegym.model.UserPrinciple;
 import com.codegym.model.dto.UserDTO;
+import com.codegym.repository.IUserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -13,71 +16,44 @@ import java.util.*;
 @Service
 public class UserService implements UserDetailsService {
 
-    public static List<User> listUser = new ArrayList<>();
-    public static List<Role> listRole = new ArrayList<>();
+    @Autowired
+    private IUserRepository iUserRepository;
 
-    public UserService() {
-        listRole.add(new Role(1L, "ROLE_ADMIN"));
-        listRole.add(new Role(2L, "ROLE_USER"));
-
-        String password = "$2a$10$xMq9EwZvdKUuvgiaM2T1Iuw9A1EGXVZaCIUPEwn1Isa9ffvPqNabe";
-        User userKai = new User(1L, "kai", password);
-        Set<Role> roleKai = new HashSet<>();
-        roleKai.add(listRole.get(0));
-        userKai.setRoles(roleKai);
-        User userSena = new User(2L, "sena", password);
-        Set<Role> roleSena = new HashSet<>();
-        roleSena.add(listRole.get(1));
-        userSena.setRoles(roleSena);
-        listUser.add(userKai);
-        listUser.add(userSena);
-    }
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public List<UserDTO> findAll() {
         List<UserDTO> userDTOS = new ArrayList<>();
-        for (User u : listUser) {
+        for (User u : iUserRepository.findAll()) {
             userDTOS.add(toDTO(u));
         }
         return userDTOS;
     }
 
     public UserDTO findById(Long id) {
-        for (User user : listUser) {
-            if (Objects.equals(user.getId(), id)) {
-                return toDTO(user);
-            }
-        }
-        return null;
+        Optional<User> user = iUserRepository.findById(id);
+        return user.map(this::toDTO).orElse(null);
     }
 
     public User findByUsername(String username) {
-        for (User user : listUser) {
-            if (Objects.equals(user.getUsername(), username)) {
-                return user;
-            }
-        }
-        return null;
+        return iUserRepository.findByUsername(username);
     }
 
     public boolean add(User user) {
-        for (User userExist : listUser) {
-            if (Objects.equals(user.getId(), userExist.getId()) || Objects.equals(user.getUsername(), userExist.getUsername())) {
-                return false;
-            }
-        }
-        listUser.add(user);
+        String passwordEncode = passwordEncoder.encode(user.getPassword());
+        user.setPassword(passwordEncode);
+        iUserRepository.save(user);
         return true;
     }
 
-    public void delete(int id) {
-        listUser.removeIf(user -> user.getId() == id);
+    public void delete(Long id) {
+        iUserRepository.deleteById(id);
     }
 
     public UserDetails loadUserByUsername(String username) {
-        for (User user : listUser) {
-            if (Objects.equals(user.getUsername(), username)) {
-                return UserPrinciple.build(user);
-            }
+        User user = iUserRepository.findByUsername(username);
+        if (user != null) {
+            return UserPrinciple.build(user);
         }
         return null;
     }

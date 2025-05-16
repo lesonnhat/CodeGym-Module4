@@ -2,17 +2,17 @@ package com.btuploadmusic.model;
 
 import org.springframework.web.multipart.MultipartFile;
 
-public class ProductForm {
+public class SongForm {
     private int id;
     private String title;
     private String artist;
     private String category;
     private MultipartFile music;
 
-    public ProductForm() {
+    public SongForm() {
     }
 
-    public ProductForm(int id, String title, String artist, String category, MultipartFile music) {
+    public SongForm(int id, String title, String artist, String category, MultipartFile music) {
         this.id = id;
         this.title = title;
         this.artist = artist;

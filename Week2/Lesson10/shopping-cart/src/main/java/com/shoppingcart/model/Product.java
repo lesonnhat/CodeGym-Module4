@@ -1,6 +1,8 @@
 package com.shoppingcart.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "product")
@@ -8,17 +10,26 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "price")
     private double price;
-    private String description;
+
+    @Column(name = "image_url")
+    private String imageUrl;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ProductDescription> descriptions = new ArrayList<>();
 
     public Product() {
     }
 
-    public Product(String name, double price, String description) {
+    public Product(String name, double price, String imageUrl) {
         this.name = name;
         this.price = price;
-        this.description = description;
+        this.imageUrl = imageUrl;
     }
 
     public Long getId() {
@@ -45,11 +56,24 @@ public class Product {
         this.price = price;
     }
 
-    public String getDescription() {
-        return description;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public List<ProductDescription> getDescriptions() {
+        return descriptions;
+    }
+
+    public void setDescriptions(List<ProductDescription> descriptions) {
+        this.descriptions = descriptions;
+    }
+
+    public void addDescription(ProductDescription description) {
+        descriptions.add(description);
+        description.setProduct(this);
     }
 }

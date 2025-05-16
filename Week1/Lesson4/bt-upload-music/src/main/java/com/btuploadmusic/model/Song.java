@@ -1,16 +1,16 @@
 package com.btuploadmusic.model;
 
-public class Product {
+public class Song {
     private int id;
     private String title;
     private String artist;
     private String category;
     private String music;
 
-    public Product() {
+    public Song() {
     }
 
-    public Product(int id, String title, String artist, String category, String music) {
+    public Song(int id, String title, String artist, String category, String music) {
         this.id = id;
         this.title = title;
         this.artist = artist;
